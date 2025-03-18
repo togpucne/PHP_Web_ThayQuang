@@ -2,8 +2,9 @@
         <h1 class="text-center">Trang Chủ</h1>
         <?php
         include "./controller/productsController.php";
-
+        include "./controller/searchController.php";
         $p = new productsController();
+        $search = new searchController();
         
         if(isset($_GET['typeOfProduct'])){
             $type = $_GET['typeOfProduct'];
@@ -16,6 +17,11 @@
         }
 
 
+        if (isset($_GET['search'])) {
+            $searchKey = $_GET['search'];
+            $searchController = new searchController();
+            $sanpham = $searchController->searchKeyController($searchKey);
+        }
 
 
         if($sanpham->num_rows <= 0){

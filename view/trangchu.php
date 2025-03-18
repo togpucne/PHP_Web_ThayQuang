@@ -20,8 +20,12 @@
         $selectSP = "SELECT * FROM sanpham";
         $sanpham = $p->getDBProducts($selectSP);
     }
+    if( $sanpham->num_rows <= 0){
+        echo '<p>Chưa có sản phẩm. Vui lòng quay lại sao!</p>';
 
-    if ($sanpham === false || $sanpham->num_rows <= 0) {
+    }
+
+    if ($sanpham === false) {
         echo '<p>Không tìm thấy sản phẩm!</p>';
     } else {
         echo '<div class="row justify-content-start">';

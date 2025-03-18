@@ -1,7 +1,5 @@
 <?php 
     class Connect{
-       
-
     public function openConnect()
     {
         $host = "localhost";

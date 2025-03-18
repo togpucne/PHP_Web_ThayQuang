@@ -1,5 +1,5 @@
 <?php
-    include './model/connect.php';
+    include_once './model/connect.php';
 
     class logOnModel{
         

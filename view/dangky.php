@@ -1,5 +1,5 @@
 <?php
-    include './controller/logOnController.php';
+    include_once './controller/logOnController.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST['name'];
         $password = $_POST['password'];

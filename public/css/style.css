@@ -24,7 +24,7 @@
 
 .inner-section {
   display: flex;
-  height: 500px;
+
   border-bottom: 1px solid black;
 }
 
@@ -35,13 +35,17 @@ border-bottom: 0px;
   border-top: 0px;
   border-right: 1px solid black;
 }
+.inner-section .inner-left ul li{
+  list-style: none;
+}
 
 .inner-section .inner-right {
   flex: 1px;
   border-right: 0px;
   border: 0px;
 }
-
+/*footer*/
 .inner-footer {
   padding: 20px;
+  margin-bottom: -5px;
 }

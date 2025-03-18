@@ -46,3 +46,15 @@
                         </div>
 
                     </main>
+
+<?php  
+    if(isset($_SERVER['REQUEST_METHOD']) == 'POST' && isset($_POST['search'])){
+        $search = $_POST['search'];
+        $url = 'index.php' .'&search='.$search;
+        header('Location: '.$url);
+        exit();
+
+    }
+
+
+?>

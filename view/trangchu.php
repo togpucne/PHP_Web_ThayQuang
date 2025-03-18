@@ -28,7 +28,7 @@
                 echo '<div class="col-3">
                             <div class="sanpham">
                                 <a href="chitietsanpham.php?id=' . $row['idsp'] . '">
-                                    <div class="tensp">' . $row['mota'] . '</div>
+                                    <div class="tensp">' . $row['tensp'] . '</div>
                                     <div class="hinh">
                                         <img src="' . $row['hinh'] . '" width="150" height="150" />
                                     </div>

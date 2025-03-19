@@ -11,7 +11,7 @@
 <div class="inner-right">
 
     <center>
-        <h2 style="color: green;">Đăng Nhập</h2>
+        <h2 style="color: red;">Đăng Nhập</h2>
     </center>
     <form action="#" method="post" name="formLogOn">
         <div class="m-3 ">
@@ -23,7 +23,7 @@
             <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter password">
         </div>
 
-        <button type="submit" class="btn btn-success m-3">Đăng Nhập</button>
+        <button type="submit" class="btn btn-danger m-3" >Đăng Nhập</button>
     </form>
 
 

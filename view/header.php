@@ -27,6 +27,6 @@
             <div class="col-12">
                 <div class="inner-wrap">
                     <header class="inner-header text-center">
-                    <center><h2>Header</h2></center>
+                    <center><h2>SHOP JUDOIT</h2></center>
 
                     </header>

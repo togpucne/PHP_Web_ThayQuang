@@ -38,7 +38,7 @@
     </div>
 
     <div class="inner-search">
-        <!-- Form tìm kiếm -->
+        
         <div class="inner-search">
             <form action="index.php" method="get">
                 <?php if (isset($_GET['typeOfProduct'])): ?>
@@ -46,7 +46,7 @@
                 <?php endif; ?>
 
                 <input type="text" class="form-control" name="search" placeholder="Search" aria-label="Search" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>" />
-                <button class="btn btn-success" type="submit">Search</button>
+                <button class="btn btn-danger" type="submit">Search</button>
             </form>
         </div>
 

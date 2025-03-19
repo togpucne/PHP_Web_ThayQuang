@@ -20,6 +20,7 @@
         $selectSP = "SELECT * FROM sanpham";
         $sanpham = $p->getDBProducts($selectSP);
     }
+    
     if( $sanpham->num_rows <= 0){
         echo '<p>Chưa có sản phẩm. Vui lòng quay lại sao!</p>';
 

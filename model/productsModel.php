@@ -5,7 +5,7 @@
         public function getProducts(){
             $p = new Connect();
             $conn = $p->openConnect();
-            $sql = "SELECT * FROM SANPHAM";
+            $sql = "SELECT * FROM sanpham";
             $result = $conn->query($sql);
             if (!$result) {
                 return false;
@@ -19,7 +19,7 @@
         public function getDBProductsType($type){
             $p = new Connect();
             $conn = $p->openConnect();
-            $sql = "SELECT * FROM SANPHAM WHERE iddm = '$type'";
+            $sql = "SELECT * FROM sanpham WHERE iddm = '$type'";
             $result = $conn->query($sql);
             if(!$result){
                 return false;

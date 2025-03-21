@@ -6,7 +6,7 @@ class searchModel {
         $p = new Connect();
         $conn = $p->openConnect(); 
 
-        $sql = "SELECT * FROM SANPHAM WHERE LOWER(tensp) LIKE ?";
+        $sql = "SELECT * FROM sanpham WHERE LOWER(tensp) LIKE ?";
         if (!empty($iddm)) {
             $sql .= " AND iddm = ?";
         }

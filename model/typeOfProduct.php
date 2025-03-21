@@ -5,7 +5,7 @@
         public function selectAllTOP(){
             $p = new Connect();
             $conn = $p->openConnect();
-            $sql = "SELECT * FROM DANHMUCSANPHAM";
+            $sql = "SELECT * FROM danhmucsanpham";
             $result = $conn->query($sql);
             return $result;
         }

@@ -6,7 +6,7 @@
         public function logInModel($name, $password){
             $p = new Connect();
             $conn = $p->openConnect();
-            $sql = "SELECT * FROM TaiKhoan WHERE TENTAIKHOAN = '$name' AND MatKhau = '$password'";
+            $sql = "SELECT * FROM taikhoan WHERE TenTaiKhoan = '$name' AND MatKhau = '$password'";
             $result = $conn->query($sql);
             return $result;
 
@@ -19,7 +19,7 @@
             if(!empty($name) && !empty($password)){
                 $p = new Connect();
                 $conn = $p->openConnect();
-                $sql = "INSERT INTO  TaiKhoan(TenTaiKhoan, MatKhau, LoaiTaiKhoan) values('$name', '$password', 1)";
+                $sql = "INSERT INTO  taikhoan(TenTaiKhoan, MatKhau, LoaiTaiKhoan) values('$name', '$password', 1)";
                 $result = $conn->query($sql);
                 return $result;
                 
@@ -31,7 +31,7 @@
             if(!empty($name)){
                 $p = new Connect();
                 $conn = $p->openConnect();
-                $sql = "SELECT * FROM TaiKhoan WHERE TENTAIKHOAN = '$name'";    
+                $sql = "SELECT * FROM taikhoan WHERE TenTaiKhoan = '$name'";    
                 $result = $conn->query($sql);
                 return $result;
                 
